@@ -15,6 +15,8 @@ class CreateTagTourismPlaceTable extends Migration
     {
         Schema::create('tag_tourism_place', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('tag_id')->references('id')->on('tags');
+            $table->foreignId('tourism_place_id')->references('id')->on('tourism_places');
             $table->timestamps();
         });
     }
