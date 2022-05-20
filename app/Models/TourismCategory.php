@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class TourismCategory extends Model
 {
     use HasFactory;
+
+    //relacion de uno a muchos con tourism places
+    public function tourism_places()
+    {
+        return $this->hasMany(TourismPlace::class);
+    }
 }

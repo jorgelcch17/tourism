@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Tag extends Model
 {
     use HasFactory;
+
+    //relacion de muchos a muchos con TourismPlace
+    public function tourism_places()
+    {
+        return $this->belongsToMany(TourismPlace::class);
+    }
 }

@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Image extends Model
 {
     use HasFactory;
+
+
+    // relacion polimorfica uno a uno
+    public function imageable()
+    {
+        return $this->morphTo();
+    }
 }

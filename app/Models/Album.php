@@ -8,4 +8,20 @@ use Illuminate\Database\Eloquent\Model;
 class Album extends Model
 {
     use HasFactory;
+
+    // relacion de uno a muchos inversa
+    public function tourism_places()
+    {
+        return $this->belongsTo(TourismPlace::class);
+    }
+
+    public function users()
+    {
+        return $this->belongsTo(User::class);
+    }
+//relacion polimorfica
+    public function image()
+    {
+        return $this->morphOne(Image::class, 'imageable');
+    }
 }
