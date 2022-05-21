@@ -9,6 +9,8 @@ class Service extends Model
 {
     use HasFactory;
 
+     protected $fillable = ['name', 'slug','description', 'direction', 'location','phone','email', 'facebook', 'whatsapp', 'website'];
+
     //uno a muchos inversa con users
     public function users()
     {

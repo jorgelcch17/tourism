@@ -9,6 +9,8 @@ class ServiceCategory extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'slug'];
+
 
     //uno a muchos con service
     public function services()

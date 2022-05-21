@@ -9,6 +9,8 @@ class Comment extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['comment'];
+
     //uno a muchos inversa con comments
     public function user()
     {

@@ -9,6 +9,8 @@ class TourismCategory extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'slug'];
+
     //relacion de uno a muchos con tourism places
     public function tourism_places()
     {

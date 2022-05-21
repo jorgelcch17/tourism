@@ -9,6 +9,8 @@ class Task extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['description'];
+
     //relacion de uno a muchos inversa con tourism places
     public function tourism_places()
     {

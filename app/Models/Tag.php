@@ -9,6 +9,8 @@ class Tag extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'slug', 'color'];
+
     //relacion de muchos a muchos con TourismPlace
     public function tourism_places()
     {

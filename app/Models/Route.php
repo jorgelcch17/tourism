@@ -9,6 +9,8 @@ class Route extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['start', 'end', 'transport', 'time', 'location'];
+
     //uno a muchos inversa con tourism places
     public function tourism_places()
     {

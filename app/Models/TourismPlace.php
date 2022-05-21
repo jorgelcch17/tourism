@@ -9,6 +9,8 @@ class TourismPlace extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'slug', 'image360', 'description', 'location', 'is_active', 'date','time','weater','price', 'altitude', 'essential'];
+
     //uno a mucho con albums
     public function albums()
     {
