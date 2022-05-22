@@ -1,7 +1,7 @@
 @props(['atractivo'])
-<article class="flex flex-col m-2 shadow-xl rounded-md overflow-hidden">
-    <div>
-        <img class="w-full h-48" src="{{Storage::url($atractivo->image->url)}}" alt="">
+<article class="flex flex-col m-2 shadow-xl rounded-md overflow-hidden group hover:shadow-2xl">
+    <div class="h-48 overflow-hidden">
+        <img class="w-full h-full group-hover:scale-125 transition duration-100" src="{{Storage::url($atractivo->image->url)}}" alt="">
     </div>
     <div class="flex-1 px-2">
         <h1 class="text-lg font-bold">{{$atractivo->name}}</h1>
