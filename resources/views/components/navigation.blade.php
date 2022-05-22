@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a href="#">
+                <a href="{{route('home')}}">
                     <span class="sr-only">Workflow</span>
                     @if(request()->is('/'))
                         <span class="text-3xl font-bold text-gray-100">CAMIRI</span>
