@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\TourismPlaceController;
 use Illuminate\Support\Facades\Route;
 

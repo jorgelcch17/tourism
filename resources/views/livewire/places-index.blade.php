@@ -15,7 +15,7 @@
         </div>
         <div class="col-span-3 grid grid-cols-3">
             @foreach($atractivos as $atractivo)
-                <x-card :atractivo="$atractivo"></x-card>
+                <x-card :tourismPlace="$atractivo"></x-card>
             @endforeach
         </div>
     </div>

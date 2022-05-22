@@ -21,7 +21,7 @@ class ServiceSeeder extends Seeder
             Image::create([
                 'url' => 'images/service.jpg',
                 'imageable_id' => $place->id,
-                'imageable_type' => TourismPlace::class,
+                'imageable_type' => Service::class,
             ]);
         }
     }

@@ -11,4 +11,10 @@ class TourismPlaceController extends Controller
     {
         return view('tourism-places.index');
     }
+
+    // funcion show para devolver un lugar turistico
+    public function show(TourismPlace $lugares_turistico)
+    {
+        return view('tourism-places.show', compact('lugares_turistico'));
+    }
 }

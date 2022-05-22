@@ -21,7 +21,7 @@ class TourismPlaceFactory extends Factory
         return [
             'name' => $name,
             'slug' => Str::slug($name),
-            'image360' => 'images/image360.jpg',
+            'image360' => 'images/image3602.jpg',
             'description' => $this->faker->text(1500),
             'location' => $this->faker->address,
             'is_active' => true,
