@@ -14,7 +14,7 @@ class AboutFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'body' => $this->faker->text(2000),
         ];
     }
 }

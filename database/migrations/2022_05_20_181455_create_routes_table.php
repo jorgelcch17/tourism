@@ -20,6 +20,7 @@ class CreateRoutesTable extends Migration
             $table->string('transport');
             $table->string('time');
             $table->text('route');
+            $table->foreignId('tourism_place_id')->references('id')->on('tourism_places');
             $table->timestamps();
         });
     }

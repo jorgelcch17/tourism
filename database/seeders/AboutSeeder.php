@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\About;
 use App\Models\Image;
-use App\Models\Service;
 use Illuminate\Database\Seeder;
 
-class ServiceSeeder extends Seeder
+class AboutSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,13 +15,13 @@ class ServiceSeeder extends Seeder
      */
     public function run()
     {
-        $places = Service::factory(30)->create();
+        $abouts = About::factory(1)->create();
 
-        foreach($places as $place) {
+        foreach($abouts as $about) {
             Image::create([
                 'url' => 'images/service.jpg',
-                'imageable_id' => $place->id,
-                'imageable_type' => TourismPlace::class,
+                'imageable_id' => $about->id,
+                'imageable_type' => About::class,
             ]);
         }
     }

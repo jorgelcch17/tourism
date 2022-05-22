@@ -16,4 +16,10 @@ class Task extends Model
     {
         return $this->belongsTo(TourismPlace::class);
     }
+
+    // relacion polimorfica una a una con Image
+    public function image()
+    {
+        return $this->morphOne(Image::class, 'imageable');
+    }
 }

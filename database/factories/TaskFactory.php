@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\TourismPlace;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TaskFactory extends Factory
@@ -14,7 +15,8 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'description' => $this->faker->text(100),
+            'tourism_place_id' => TourismPlace::all()->random()->id,
         ];
     }
 }

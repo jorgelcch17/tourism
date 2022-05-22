@@ -17,13 +17,16 @@ class CreateServicesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug');
-            $table->string('description');
+            $table->longText('description');
+            $table->string('direction');
             $table->text('location')->nullable();
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
             $table->string('facebook')->nullable();
             $table->string('whatsapp')->nullable();
             $table->string('website')->nullable();
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('service_category_id')->references('id')->on('service_categories');
             $table->timestamps();
         });
     }

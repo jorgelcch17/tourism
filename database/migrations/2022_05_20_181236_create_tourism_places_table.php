@@ -22,7 +22,7 @@ class CreateTourismPlacesTable extends Migration
             $table->Text('location')->nullable();
             $table->boolean('is_active')->default(false);
             $table->date('date')->nullable();
-            $table->string('time')->nullable();
+            $table->string('hours')->nullable();
             $table->string('weater')->nullable();
             $table->string('price')->nullable();
             $table->string('altitude')->nullable();
