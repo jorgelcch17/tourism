@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::resource('/lugares-turisticos', TourismPlaceController::class)->names('tourism-places');
+
+Route::resource('/servicios', ServiceController::class)->names('services');
+
+Route::resource('/eventos', EventController::class)->names('events');
+
+Route::get('/about', AboutController::class)->name('about');
 
 Route::middleware([
     'auth:sanctum',
