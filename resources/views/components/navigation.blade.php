@@ -28,12 +28,12 @@
 
                 @if(request()->is('/'))
                     <a href="#" class="text-base font-medium text-gray-100 hover:text-gray-300"> Inicio </a>
-                    <a href="#" class="text-base font-medium text-center text-gray-100 hover:text-gray-300"> Atractivos <br> turisticos </a>
+                    <a href="{{route('tourism-places.index')}}" class="text-base font-medium text-center text-gray-100 hover:text-gray-300"> Atractivos <br> turisticos </a>
                     <a href="#" class="text-base font-medium text-gray-100 hover:text-gray-300"> Servicios </a>
                     <a href="#" class="text-base font-medium text-gray-100 hover:text-gray-300"> Galeria </a>
                 @else
                     <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Inicio </a>
-                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Atractivos turisticos </a>
+                    <a href="{{route('tourism-places.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900"> Atractivos turisticos </a>
                     <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Servicios </a>
                     <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Galeria </a>
                 @endif

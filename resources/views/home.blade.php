@@ -32,8 +32,8 @@
             </div>
         </section>
         <section class="my-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 :grid-cols-4">
-                <div class="flex justify-between lg:flex-col lg:justify-center items-center lg:order-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div class="flex md:col-span-2 lg:col-auto justify-between lg:flex-col lg:justify-center items-center lg:order-1">
                     <div class="block md:flex lg:block space-x-2 p-6">
                         <p class="text-3xl font-bold">Atractivos</p>
                         <p class="text-3xl font-bold">turisticos</p>
