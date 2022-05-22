@@ -18,8 +18,7 @@ class ServiceSeeder extends Seeder
         $places = Service::factory(30)->create();
 
         foreach($places as $place) {
-            Image::create([
-                'url' => 'images/service.jpg',
+            Image::factory(1)->create([
                 'imageable_id' => $place->id,
                 'imageable_type' => TourismPlace::class,
             ]);

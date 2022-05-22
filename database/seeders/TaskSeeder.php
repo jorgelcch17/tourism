@@ -18,8 +18,7 @@ class TaskSeeder extends Seeder
         $tasks = Task::factory(100)->create();
 
         foreach($tasks as $task) {
-            Image::create([
-                'url' => 'images/task.jpg',
+            Image::factory(1)->create([
                 'imageable_id' => $task->id,
                 'imageable_type' => Task::class,
             ]);
