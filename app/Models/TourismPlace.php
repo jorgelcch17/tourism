@@ -17,8 +17,8 @@ class TourismPlace extends Model
         return $this->hasMany(Album::class);
     }
 
-    //relacion de uno a muchos inversa tourism_categories
-    public function tourism_categories()
+    //relacion de uno a muchos inversa a tourism_categories
+    public function tourism_category()
     {
         return $this->belongsTo(TourismCategory::class);
     }
