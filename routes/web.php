@@ -37,3 +37,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+
+
+Route::get('pruebaapi/datoleo', 'pruebaapiController@datoleo')->name('datoleo');
