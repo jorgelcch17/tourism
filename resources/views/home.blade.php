@@ -42,7 +42,7 @@
                     <a class="block px-6 py-2 rounded-xl bg-blue-500 hover:bg-blue-600 text-gray-100" href="{{route('tourism-places.index')}}">Ven más...</a>
                 </div>
                 @foreach ($atractivos as $atractivo)
-                    <x-card :atractivo="$atractivo"/>
+                    <x-card :tourismPlace="$atractivo"/>
                     {{-- {{Storage::url($atractivo->image->url)}} --}}
                 @endforeach
             </div>
