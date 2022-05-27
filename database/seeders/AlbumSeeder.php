@@ -18,7 +18,8 @@ class AlbumSeeder extends Seeder
         $albums = Album::factory(100)->create();
 
         foreach($albums as $album) {
-            Image::factory(1)->create([
+            Image::create([
+                'url' => 'images/album.jpg',
                 'imageable_id' => $album->id,
                 'imageable_type' => Album::class,
             ]);

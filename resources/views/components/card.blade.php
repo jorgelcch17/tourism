@@ -1,5 +1,5 @@
 @props(['tourismPlace'])
-<article class="flex flex-col m-2 shadow-xl rounded-md overflow-hidden group hover:shadow-2xl">
+<article class="flex flex-col m-2 shadow-md rounded-md overflow-hidden group hover:shadow-xl">
     <div class="h-48 overflow-hidden">
         <img class="w-full h-full group-hover:scale-125 transition duration-100" src="{{Storage::url($tourismPlace->image->url)}}" alt="">
     </div>

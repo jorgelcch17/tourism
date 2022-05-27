@@ -13,10 +13,10 @@ class ImageFactory extends Factory
      */
     public function definition()
     {
-        $faker = \Faker\Factory::create();
-        $faker->addProvider(new \Smknstd\FakerPicsumImages\FakerPicsumImagesProvider($faker));
+        // $faker = \Faker\Factory::create();
+        // $faker->addProvider(new \Smknstd\FakerPicsumImages\FakerPicsumImagesProvider($faker));
         return [
-            'url' => 'images/'. $faker->image('public/storage/images',400,400,false),
+            'url' => 'images/'.$this->faker->image('public/storage/images',400,400,false),
         ];
     }
 }

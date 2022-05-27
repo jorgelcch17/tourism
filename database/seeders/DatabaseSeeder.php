@@ -20,9 +20,9 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        Storage::deleteDirectory('images');
+        // Storage::deleteDirectory('images');
 
-        Storage::makeDirectory('images');
+        // Storage::makeDirectory('images');
 
         $this->call(UserSeeder::class);
         Tag::factory(30)->create();

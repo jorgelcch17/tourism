@@ -19,7 +19,8 @@ class TourismPlaceSeeder extends Seeder
         $places = TourismPlace::factory(30)->create();
 
         foreach($places as $place) {
-            Image::factory(1)->create([
+            Image::create([
+                'url' => 'images/tourism_place.jpg',
                 'imageable_id' => $place->id,
                 'imageable_type' => TourismPlace::class,
             ]);

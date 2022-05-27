@@ -18,7 +18,8 @@ class AboutSeeder extends Seeder
         $abouts = About::factory(1)->create();
 
         foreach($abouts as $about) {
-            Image::factory(1)->create([
+            Image::create([
+                'url' => 'images/about.jpg',
                 'imageable_id' => $about->id,
                 'imageable_type' => About::class,
             ]);
